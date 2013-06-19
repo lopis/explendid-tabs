@@ -1,1 +1,140 @@
-/home/joaolopes/.mozilla/firefox/brwbouie.default/chrome/userChrome.css
+/*
+ * Thanks for downloading :)
+ * https://github.com/lopis/explendid-tabs
+ */
+
+/*
+ * Do not remove the @namespace line -- it's required for correct functioning
+ */
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"); /* set default namespace to XUL */
+
+ 
+ .tabbrowser-tab[fadein]:not([pinned]) {
+	
+ min-width: 40px !important;
+ max-width: 40px !important;
+ font-size: 0pt;
+ height: 30px;
+} 
+
+ #urlbar {
+ /*max-width: 600px !important;*/
+ min-width: 400px !important;
+ height: 30px;
+ border-radius: 5px;
+ border-style: solid;
+}
+
+.searchbar-textbox {
+ min-height: 30px !important;
+}
+
+#search-container {
+ height: 30px !important;
+}
+
+.scrollbutton-down {
+ display: none !important;
+}
+
+.scrollbutton-up {
+ display: none !important;
+} 
+
+.tab-drop-indicator  {
+ height: 40px;
+}
+
+toolbox#navigator-toolbox > toolbar > tabs > hbox {
+ display: none !important;
+ height: 40px
+}
+
+.box-inherit scrollbox-innerbox {
+ height: 40px
+}
+
+.tabbrowser-tab {
+  margin: 1px 1px 1px 1px;
+}
+
+.tabbrowser-tab[pinned="true"] {
+ height: 32px;
+ margin-bottom: 0px;
+ min-width: 38px !important;
+ max-width: 38px !important;
+}
+
+.tab-stack {
+  width: 16px !important;
+}
+
+.tab-content{
+  padding-left: 8px;
+  text-align: center !important;
+  height: 16px !important;
+  width: 16px !important;
+}
+
+.tab-content * {
+  max-height: 16px !important;
+  width: 16px !important;
+  position: relative !important;
+  float: left !important;
+}
+
+.tab-close-button {
+  visibility: collapse !important;
+}
+
+
+#nav-bar {
+  background-image: none !important;
+}
+
+.tabbrowser-tab:not([selected="true"]), .tabs-newtab-button:not(:-moz-lwtheme){
+  background-image: none !important;
+}
+
+.tabbrowser-tab:not(:-moz-lwtheme):not([selected="true"]), .tabs-newtab-button:not(:-moz-lwtheme) {
+  background-image: none !important;
+}
+
+.tabbrowser-tab:not([selected="true"]):hover, .tabs-newtab-button:not(:-moz-lwtheme):hover{
+  background-image: -moz-linear-gradient(top, rgba(200,230,255,0) 0%, rgba(200,230,255,1) 5%, rgba(200,230,255,0) 50%, rgba(200,230,255,0) 100%) !important;
+}
+
+.tabbrowser-tab:not([selected="true"]) { 
+  background-image: -moz-linear-gradient(top, rgba(210,210,210,0) 0%, rgba(210,210,210,1) 5%, rgba(210,210,210,0) 50%, rgba(210,210,210,0) 100%) !important;
+}
+
+.tabbrowser-tab[selected="true"] { 
+  background-image: -moz-linear-gradient(top, rgba(180,210,255,0) 0%, rgba(180,210,255,1) 5%, rgba(180,210,255,0) 50%, rgba(180,210,255,0) 100%) !important;
+}
+
+.tabbrowser-tab:not([selected="true"])[titlechanged="true"] {
+  /** border-radius: 0px !important; **/
+  background-image: -moz-linear-gradient(top, rgba(255,150,0,0) 0%, rgba(255,150,0,1) 5%, rgba(255,150,0,0) 50%, rgba(255,150,0,0) 100%) !important;
+}
+
+.tabbrowser-tab, .tabbrowser-tab[pinned="true"], tab{
+  margin-top: 0px !important;
+  border-radius: 0px !important;
+	border-top-style: none !important;
+	border-right-style: none !important;
+	border-bottom-style: none !important;
+	border-left-style: none !important;
+  border-width: 0px !important;
+  border-color: #999 !important;
+  border-image-source: none;
+}
+
+
+.tab-icon-image {
+  margin-right: 0 !important;
+}
+
+.tab-text {
+  display: none !important;
+  visibility: hidden !important;
+}
