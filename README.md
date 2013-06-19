@@ -10,10 +10,10 @@ the userchrome file. A CSS file that overrides Firefox's default style.
 
 Screenshot: http://imgur.com/GPQz2bM
 
-Instructions:
+== Instructions
 1. Locate the chrome folder in your firefox profile. Create that folder if it doesn't exist!
-  > Default in Windows should be  <User Folder>/AppData/Mozilla/Firefox/<Profile Name>/chrome/
-  > Default in Linux should be ~/.mozilla/firefox/<Profile Name>/chrome
+   Default in Windows should be  <User Folder>/AppData/Mozilla/Firefox/<Profile Name>/chrome/
+   Default in Linux should be ~/.mozilla/firefox/<Profile Name>/chrome
 2. Place userchrome.css in the chrome folder.
 3. Restart Firefox
 4. Ideally, apply this persona https://addons.mozilla.org/en-US/firefox/addon/subtle-gray/
